@@ -30,7 +30,9 @@ CONSTRAINT FK_PersonOrder FOREIGN KEY (User_ID) REFERENCES accidents.User_detail
 );
 
 USE CASES
-1.	Use Case: Highest re-tweet count based on car accidents
+
+1.	
+Use Case: Highest re-tweet count based on car accidents
 Description: Display the highest re-tweet count 
 Actor: Person
 Steps:
@@ -38,7 +40,8 @@ Post Condition: Successfully displays the re-tweet count
 Alternate Path: The request is not correct and system throws an error
 Error: Information is incorrect
 
-2.	Use Case: Most frequently used hashtags based on car accidents
+2.	
+Use Case: Most frequently used hashtags based on car accidents
 Description: Display most frequent hashtags used. 
 Actor: Person
 Steps:
@@ -47,7 +50,8 @@ Alternate Path: The request is not correct and system throws an error
 Error: Information is incorrect
 
 
-3.	Use Case: Tweet texts that include accidents caused by carcrashes
+3.	
+Use Case: Tweet texts that include accidents caused by carcrashes
 Description: Display list of tweet texts that include accidents caused by carcrashes.
 Actor: Person
 Steps:
@@ -55,7 +59,8 @@ Post Condition: Successfully displays the tweet text list
 Alternate Path: The request is not correct and system throws an error
 Error: Information is incorrect
 
-4.	Use Case: User that has the highest number of followers
+4.	
+Use Case: User that has the highest number of followers
 Description: Display details of users having highest number of followers 
 Actor: Person
 Steps:
@@ -64,7 +69,8 @@ Alternate Path: The request is not correct and system throws an error
 Error: Information is incorrect
 
 
-5.	Use Case: Major cause of carcrashes
+5.	
+Use Case: Major cause of carcrashes
 Description: Display major cause that leads to car crashes.
 Actor: Person
 Steps:
@@ -73,7 +79,8 @@ Alternate Path: The request is not correct and system throws an error
 Error: Information is incorrect
 
 
-6.	Use Case: Frequently used source to post tweets 
+6.	
+Use Case: Frequently used source to post tweets 
 Description: Display the most frequently used source details to post tweets
 Actor: Person
 Steps:
@@ -81,7 +88,8 @@ Post Condition: Successfully displays the source details
 Alternate Path: The request is not correct and system throws an error
 Error: Information is incorrect
 
-7.	Use Case: Tweet count containing #drunkdriving keyword
+7.	
+Use Case: Tweet count containing #drunkdriving keyword
 Description: Display the most frequently used source details to post tweets
 Actor: Person
 Steps:
@@ -89,7 +97,8 @@ Post Condition: Successfully displays the source details
 Alternate Path: The request is not correct and system throws an error
 Error: Information is incorrect
 
-8.	Use Case: List of user id active in tweeting 
+8.	
+Use Case: List of user id active in tweeting 
 Description: Displays most active users and tweet id of the user that are active in tweeting.
 Actor: Person
 Steps:
