@@ -59,23 +59,8 @@ Post Condition: Successfully displays the user account details.
 Alternate Path: The request is not correct and system throws an error
 Error: Information is incorrect
 
-5.	Use Case: Display date details on which highest number of tweets have been posted along with the username.
-Description: Date details having highest number of tweets posted
-Actor: Person
-Steps:
-Post Condition: Successfully displays the timestamp details.
-Alternate Path: The request is not correct and system throws an error
-Error: Information is incorrect
 
-6.	Use Case: Display location details with highest number of car accidents reported
-Description: Display details of location with most number of car accident occurrences. 
-Actor: Person
-Steps:
-Post Condition: Successfully displays the location details with frequent accident occurrences.
-Alternate Path: The request is not correct and system throws an error
-Error: Information is incorrect
-
-7.	Use Case: Major cause of carcrashes
+5.	Use Case: Major cause of carcrashes
 Description: Display major cause that leads to car crashes.
 Actor: Person
 Steps:
@@ -84,7 +69,7 @@ Alternate Path: The request is not correct and system throws an error
 Error: Information is incorrect
 
 
-8.	Use Case: Frequently used source to post tweets 
+6.	Use Case: Frequently used source to post tweets 
 Description: Display the most frequently used source details to post tweets
 Actor: Person
 Steps:
@@ -92,7 +77,7 @@ Post Condition: Successfully displays the source details
 Alternate Path: The request is not correct and system throws an error
 Error: Information is incorrect
 
-9.	Use Case: Tweet count containing #drunkdriving keyword
+7.	Use Case: Tweet count containing #drunkdriving keyword
 Description: Display the most frequently used source details to post tweets
 Actor: Person
 Steps:
@@ -100,7 +85,7 @@ Post Condition: Successfully displays the source details
 Alternate Path: The request is not correct and system throws an error
 Error: Information is incorrect
 
-10.	Use Case: List of user id active in tweeting 
+8.	Use Case: List of user id active in tweeting 
 Description: Displays most active users and tweet id of the user that are active in tweeting.
 Actor: Person
 Steps:
@@ -187,10 +172,6 @@ SELECT Source, count(Source) as frequently_used_source
 FROM Tweets_table
 Group by Source
 Order by ‘frequently_used_source’ desc
-
-
-
-
 
 7.	Use Case: Tweet count containing #drunkdriving keyword
 
