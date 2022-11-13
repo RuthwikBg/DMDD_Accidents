@@ -7,13 +7,16 @@ This database comprises of accident data collected from twitter over five years 
 SQL Statements for the conceptual model: 
 
 USER_DETAILS Table:
+
 CREATE TABLE accidents.User_details(
 User_ID bigint(50) primary key, 
 Username varchar(50) not null, 
 Follower_count int(10), 
-Location varchar(50));
+Location varchar(50)
+);
 
 TWEETS Table:
+
 CREATE TABLE accidents.Tweets_table(
 User_ID bigint(50), 
 Tweet_ID bigint(50) primary key, 
@@ -23,7 +26,8 @@ Retweeted varchar(10),
 Source varchar(100), 
 Favourite_count int(10), 
 HashTags varchar(300),
-CONSTRAINT FK_PersonOrder FOREIGN KEY (User_ID) REFERENCES accidents.User_details(User_ID));
+CONSTRAINT FK_PersonOrder FOREIGN KEY (User_ID) REFERENCES accidents.User_details(User_ID)
+);
 
 USE CASES
 1.	Use Case: Highest re-tweet count based on car accidents
