@@ -96,15 +96,18 @@ Error: Information is incorrect
 RELATIONAL-ALGEBRA EXPRESSIONS FOR THE USE CASES
 
 1.	Use Case: Highest re-tweet count based on car accidents
+
 π MAX (retweet_count)
  γ MAX (retweet_count)
   σ tweet_text LIKE "%CarAccidents%" tweets_table
 
 2.	Use Case: Most frequently used hashtags based on car accidents
+
 π hashtags
  σ tweet_text LIKE "%fatal%" AND tweet_text LIKE "%crash%" AND tweet_text LIKE "%drive%" tweets_table
 
 3.	Use Case: Tweet texts that include accidents caused by carcrashes
+
 π tweet_text
  σ tweet_text LIKE "%carcrashes%" tweets_table
 
@@ -112,20 +115,25 @@ RELATIONAL-ALGEBRA EXPRESSIONS FOR THE USE CASES
 
 π user_id, username user_details π MAX (follower_count)
  γ MAX (follower_count) user_details
+
 5.	Use Case: Major cause of carcrashes
 
 π tweet_text
  σ tweet_text LIKE "%caused by%" tweets_table
 
 6.	Use Case: Frequently used source to post tweets 
+
 τ COUNT (source) ↓
  γ source, COUNT (source) tweets_table
 
 7.	Use Case: Tweet count containing #drunkdriving keyword
+
 π COUNT (tweet_text)
  γ COUNT (tweet_text)
   σ hashtags LIKE "%drunkdriving%" tweets_table
+
 8.	Use Case: List of user id active in tweeting
+
 τ active_users ↓
  π user_id, COUNT (user_id) → active_users
   γ user_id, COUNT (user_id) tweets_table
